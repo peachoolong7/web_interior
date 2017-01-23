@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="dist/css/alpha.css" rel="stylesheet">
+
+</head>
+<body>
+  <section class="parallax-window" data-parallax="scroll" data-image-src="images/10.jpg">
+  </section>
+  <section class="home-slider">
+
+
+    <nav class ="wi-navigation">
+      <div class="container ">
+        <div class="col-lg-12">
+        <ul class="pull-left wi-navigation-left">
+          <li class="wi-logo"></li>
+        </ul>
+        <ul class="pull-right wi-navigation-right">
+          <a href="#" class ="active"><li>Home</li></a>
+          <a href = "#"><li>About</li></a>
+          <a href = "#"><li>Gallery</li></a>
+          <a href = "#"><li>What we do</li></a>
+          <a href = "#"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+
+    </nav>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <div class="col-lg-3">
+        <img src="images/logo.png" alt="" class="logo-content">
+
+        <div class="content-menu-line"></div>
+        <div class="content-menu">
+            <h3 class ="content-menu-title">ABOUT</h3>
+        </div>
+        <div class="content-menu-line-under"></div>
+        <br>
+        <ul class="content-menu-links">
+          <p>ARCON INDONESIA is a deluxe brand in interior design, contractor, home furnishings, and construction since 2014. We always serve what client wants, not an usual design but the owner's design that we made it real. It is about knowing and understanding each of our client’s characters, needs and dreams. Increasing client needs make us also continue to develop our business reach maximal.</p>
+        </ul>
+      </div>
+      <div class="col-lg-9 imageContainer">
+
+        <div class="">
+          <div class="image">
+            <img src="images/10.jpg" alt="" class="largeImage col-lg-12" width = "100%">
+
+            <img src="images/10.jpg" alt="" class="smallImage col-lg-6" width = "100%">
+            <img src="images/10.jpg" alt="" class="smallImage col-lg-6" width = "100%">
+
+            <img src="images/10.jpg" alt="" class="smallImage col-lg-6" width = "100%">
+            <img src="images/10.jpg" alt="" class="smallImage col-lg-6" width = "100%">
+
+            <img src="images/10.jpg" alt="" class="smallImage col-lg-6" width = "100%">
+            <img src="images/10.jpg" alt="" class="smallImage col-lg-6" width = "100%">
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section class="parallax-window" data-parallax="scroll" data-image-src="images/10.jpg">
+
+  <section class="content2">
+    <div class="container">
+      <div class="col-lg-12">
+        asdf
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="content-contacts">
+    <div class="container">
+      <div class="col-lg-12">
+        contacts
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="content-footer">
+    <div class="container">
+      <div class="col-lg-12">
+        footer
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="dist/js/parallax.js"></script>
+
+
+  <script>
+  $(window).scroll(function() {
+   var hT = $('.wi-navigation').offset().top,
+       hH = $('.wi-navigation').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+       console.log(wS);
+   if (wS>= 100){
+     $('.wi-navigation').css("position", "fixed");
+     $('.wi-navigation').css("top", "0px");
+     $('.wi-navigation').css("bottom", "auto");
+
+   }
+   if(wS < $('.parallax-window').innerHeight()-64){
+     $('.wi-navigation').css("position", "absolute");
+     $('.wi-navigation').css("top", "auto");
+     $('.wi-navigation').css("bottom", "0px");
+     console.log('asdfaaaaaaaaaa');
+   }
+  });
+
+
+  </script>
+</body>
+</html>
